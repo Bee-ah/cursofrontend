@@ -1,0 +1,306 @@
+/* Importando CSS de Tabelas */
+@import url('tabelas.css');
+
+html {
+	font-family: sans-serif;
+	color: #333333;
+}
+
+p {
+	color: #454545;
+}
+
+header p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+
+
+header h2 {
+	font-weight: 100;
+}
+
+
+header > h2 {
+	font-weight: 600;
+}
+
+h2 + p {
+	/*background: #FF0;*/
+	background: #A87A79;
+	color: #333;
+}
+
+h2 ~ h5 {
+	font-size: 1.2rem;
+}
+
+div ~ p {
+	text-transform: uppercase;
+}
+
+
+/* Pseudo-classes */
+
+a {
+
+	text-decoration: none; 
+	display: block;
+	width: 100%;
+	height: auto;
+
+}
+a:link{
+	color: #fff;
+}
+a:visited {
+	color: #fFD700;
+}
+
+a:hover {
+	color: #009;
+	background: #eee;
+}
+
+/* 
+	Tipografia
+*/
+
+html {
+	font-family: sans-serif;
+}
+
+h1, h2, h3 {
+	font-weight: 400;
+	font-family: 'Limelight', cursive;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+ul {
+	padding-left: .5rem;
+	margin-left: .5rem;	
+}
+
+li {
+	letter-spacing: 0.01rem;
+	font-family: sans-serif;
+	line-height: 1.5;
+	padding-bottom: 1rem;
+}
+
+h3 {
+	font: italic bold 1.2rem/2 sans-serif;
+}
+
+
+body {
+	background: url('../images/pattern.png') center top repeat rgba(245,201,201,0.4);/*#EEEEEE;*/
+}
+
+section {
+	background:rgba(255, 255, 255, 0.95);
+}
+
+
+header,footer {
+	background-color:#223f5e; 
+}
+
+footer p {
+	color: rgb(255, 255, 255);
+}
+
+.navegacao {
+	background-color:#8298a8;
+	padding: 0.5rem;
+}
+
+a {
+	color: white;
+	font-size: 1.4rem;
+}
+a:visited{
+	color: #ccdae8;
+}
+
+a:hover {
+	background-color: rgba(150, 150, 200, 0.5);
+	color: #333333;
+}
+
+/*article*/
+
+
+.texto{
+	text-align: center;
+}
+.texto h1{
+	margin-bottom: 1.7rem;
+}
+.texto p{
+	margin-bottom:5rem ;
+}
+
+
+/*blocos dentro de article*/
+/*
+.blocos li{
+	display: inline-block;
+	width: 25%;
+	height: 150px;
+	vertical-align:middle ;
+	border-radius: 50%;
+	border: 1px solid rgba(245,201,201,0.4) ;
+	padding: 2rem;
+	text-align:center ;
+	background-color: rgba(245,201,201,0.4);
+	font-size: 1.7rem;
+	font-family: 'Lora', serif;
+
+}
+.blocos::after{
+	content: 'b';
+	width: 100%;
+	display: inline-block;
+	color: rgba(255, 255, 255, 0.95);;
+}
+.blocos{
+	text-align: justify;
+}
+
+
+	max-width: 30%;
+	text-align:center ;
+	vertical-align:middle ;
+*/
+.blocos{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+		
+}
+.blocos div{
+	background-color: rgba(245,201,201,0.4);
+	border: 1px solid rgba(245,201,201,0.4) ;
+	border-radius: 50%;
+	text-align:center ;
+	vertical-align:middle ;
+	max-width: 28%;
+}
+.blocos div p{
+	padding: 1em;
+	padding-bottom :2em ;
+	padding-top: 2em;
+	font-size: 1.7rem;
+	font-family: 'Lora', serif;
+}
+
+
+
+
+/*parte do café*/
+.cafe h2{
+	background-color:#A87A79 ;
+	width: 59vw;
+	display: inline-block;
+	padding-bottom: 1.2rem;
+	padding-top: 1.2rem;
+}
+.cafe img{
+	width: 100px;
+	height: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+.cafe{
+	margin-top: 3rem;
+}
+.cafe h3{
+	text-align: center;
+	font-size: 1.6rem;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60%;
+	font-family: 'Lora', serif;
+	font-style: normal;
+	font-weight: normal;
+}
+.cafe a{
+	color: #fff;
+	font-size: 1.4rem;
+	width: fit-content;
+    background-color: #8298a8;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.8rem;
+}
+
+/*Página de contato*/
+#fotodecontato{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border-radius: 50%;
+	border: 5px solid #A87A79;
+}
+#fotodecontato img{
+	width: 100%;
+}
+.contato h3{
+	margin-top: 2rem;
+	font-style: normal;
+	font-size: 1.8rem;
+}
+.contato{
+	position: relative;
+	top: 30px;
+	left: 20px;
+
+}
+.contato p{
+	font-family: 'Lora', serif;
+	margin-top: 5rem;
+}
+
+/*mobile first*/
+
+@media(min-width:769px){
+	.blocos div{
+		box-shadow: inset 0 0 1em pink;
+	}
+}
+
+
+
+/*tablet*/
+@media(max-width: 768px){
+	.cafe h2{
+		width: 50vw;
+	}
+}
+
+
+
+
+/*smartphone*/
+@media(max-width: 425px){
+	nav,article{
+		width: 100%;
+		min-width: 320px;
+	}
+	.blocos{
+		flex-direction: column;
+		gap: 10px;
+	}
+	.blocos div{
+		border-radius: 0%;
+		max-width: 100%;
+	}
+}
+

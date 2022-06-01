@@ -1,0 +1,42 @@
+/* Css da pagina formularios */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.6rem;
+}
+
+article h1{
+	font-family: times,"Times New Roman",serif;
+	font-size: 1.6em;
+}
+
+[type="text"] , [type="email"] , textarea, label{
+	width: 80%;
+}
+
+fieldset div{
+	margin-top: 1em;/*16px*/
+	margin-bottom: 2em;
+	position: relative;
+	left: 1.25em;
+	top: 0.5em;/*8px*/
+}
+fieldset{
+	width: 90%;
+}
+.field label{
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+input{
+	padding: 1rem;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens*/ 
+@media (max-width: 600px) {
+	nav, article {
+		width: 100%;
+		height: auto;
+		}			
+}

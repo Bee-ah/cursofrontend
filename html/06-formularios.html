@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- RESET -->
+		<link rel="stylesheet" type="text/css" href="./css/reset.css">
+		
+		<!-- GOOGLE FONTS -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet"> 
+
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+
+
+		
+		<!-- Estilos Personalizados -->
+		<link rel="stylesheet" type="text/css" href="./css/layout.css">
+		<link rel="stylesheet" type="text/css" href="./css/modulo-07.css">
+		<link rel="stylesheet" type="text/css" href="./css/formulario.css">
+	</head>
+	<body>
+		<header >
+
+
+			<div class="cab">
+				
+				<h2>Curso Front-end</h2>
+				<p>Aprenda do Zero ao Pro</p>
+				<div><h2>EBAC</h2></div>
+				<h5>Escola Britânica de Artes Criativas e Tecnologia</h5>
+				<p>Aprenda de modo prático</p>
+			</div>	
+	
+				
+		</header>
+
+		<section>
+
+			<nav>
+				<h3>Aulas:</h3>
+				<ul class="navegacao">
+					<li><a href="01-introducao.html">Introdução</a></li>
+					<li><a href="02-listas-e-links.html">Listas e Links</a></li>
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+					<li><a href="05-layouts.html">Layouts</a></li>
+					<li><a href="modulo-07.html">Assunto modulo 7</a></li>
+					<li><a href="modulo-07-exercicio.html">Exercicio modulo 7</a></li>
+					<li><a href="modulo-08.html">Home</a></li>
+				</ul>
+				<hr />
+				<h3>Fontes de pesquisa:</h3>
+				<ul class="navegacao">
+					<li><a href="https://www.w3schools.com/html/default.asp">W3Schools</a></li>
+					<li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML">Mozilla Developer Network</a></li>
+
+				</ul>
+				<hr />
+				<h3>Contato:</h3>
+				<ul class="navegacao">
+					<li><a href="homepagebeatriz.html">Contato</a></li>
+					<li><a href="https://github.com/Bee-ah?tab=repositories">github</a></li>	
+					<li><a href="mailto:beatrizleite_aragao@hotmail.com">beatrizleite_aragao@hotmail.</a></li>
+				</ul>	
+			</nav>
+
+			<article>
+
+				<h1>Pesquisa</h1>
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+					<fieldset>
+						<legend style="font-size:1.3rem"><em>Informações de contato</em></legend>
+						<div>
+							<label for="nome">Nome</label><br>
+							<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+						</div>
+
+						<div>
+							<label for="email">E-mail</label><br>
+							<input type="email" name="email" id="email" placeholder="Digite seu email">
+						</div>
+
+						<div>
+							<label for="mensagem">Mensagem</label><br>
+							<textarea name="mensagem" id="mensagem" rows="6"></textarea>
+						</div>
+					</fieldset>	
+					<fieldset class="field">
+						<legend style="font-size:1.3rem"><em>Perguntas simples</em></legend>
+						<div>
+							<p>
+								<label>Qual linguagem você prefere?</label>
+								<input type="radio" name="linguagens" value="html"> HTML
+								<input type="radio" name="linguagens" value="css"> CSS
+								<input type="radio" name="linguagens" value="javascript"> JavaScript
+							</p>
+						</div>
+
+						<div>
+							<p>
+								<label>Quais linguagens você sabe?</label>
+								<input type="checkbox" name="linguagens" value="html"> HTML
+								<input type="checkbox" name="linguagens" value="css"> CSS
+								<input type="checkbox" name="linguagens" value="javascript"> JavaScript
+							</p>
+						</div>
+
+						<div>
+							<label>Qual é o seu tipo de café preferido ?</label>
+							<select>
+								<option value="Expresso" selected>Expresso</option>
+								<option value="Cappuccino">Cappuccino</option>
+								<option value="Caffé latte">Caffé latte</option>
+								<option value="Macchiato">Macchiato</option>
+								<option value="Mocha">Mocha</option>
+								<option value="Irish Coffee">Irish Coffee</option>
+
+							</select>
+						</div>
+						<div>
+							<p>
+								<label>Qual a sua avaliação desse site(onde 1 é muito ruim e 5 é muito bom)?</label>
+									<input type="radio" name="radteste" value="muitoruim">1
+									<input type="radio" name="radteste" value="ruim">2
+									<input type="radio" name="radteste" value="medio">3
+									<input type="radio" name="radteste" value="bom">4
+									<input type="radio" name="radteste" value="muitobom">5
+							</p>
+
+
+
+						</div>
+					</fieldset>	
+
+
+
+					<div>
+						<input type="submit" >
+					</div>
+					
+
+				</form>
+
+				
+				
+			</article>
+
+
+		</section>
+
+		<footer>
+			<p>Desenvolvido por Beatriz Leite</p>
+		</footer>
+		
+	</body>
+</html>
