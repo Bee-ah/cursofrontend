@@ -2,7 +2,6 @@ html{
     font-size:62.5%;
 }
 
-
 header{
     display:block;
     float:left;
@@ -11,10 +10,12 @@ header{
     padding:20px;
     border-bottom: 1px solid #254159;
 }
+
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #f5f5f5;
 }
+
 section{
     font-size:1.5rem;/*equivalente a 15px*/
     display:block;
@@ -23,6 +24,7 @@ section{
     padding:20px;
     background: #fff;
 }
+
 .main-container{
     max-width: 100vw;
     margin: 0 auto;
@@ -34,9 +36,9 @@ section{
     padding:20px;
     margin: 0 auto;
     float:left;
-    max-width:100%;
     max-width: 1198px;
 }
+
 h1{
     font-size:2.4rem;
     color:#254159;
@@ -64,6 +66,8 @@ p{
     line-height:1.4;/*espaçamento entre linhas*/
     color:#333;
 }
+
+/*seção dos links*/
 nav li{
     margin:2px 20px 2px 0;
     padding:10px;
@@ -71,6 +75,9 @@ nav li{
 }
 nav li:hover{
     background-color: #dfdfdf;
+}
+nav ul{
+    list-style-type: none;
 }
 nav a{
     text-decoration: none;
@@ -84,6 +91,7 @@ section nav{
     float:left;
     width:30%;
 }
+/*article*/
 section article{
     display:block;
     float:left;
@@ -110,4 +118,34 @@ footer p{
 footer small{
     font-size: 80%;
     display:block;
+}
+img{
+    max-width:100%;
+    height:auto;
+}
+
+/*dimensão do formulário*/
+.cognito{
+    height:390px !important;
+    overflow:hidden !important;
+}
+
+#interesse{
+    background-color: #b8c8d6;
+    width: 100%;
+}
+#interesse p{
+    margin-bottom: 40px;
+}
+
+/*Design responsivo*/
+@media(max-width: 425px){
+	section nav, section article{
+		width: 100%;
+		min-width: 320px;
+	}
+	.container{
+        padding-left:5%;
+        padding-right:5%;
+    }
 }
