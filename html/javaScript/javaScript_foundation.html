@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa</title>
+    <link rel="stylesheet" href="./css/estilo">
+    <script type="text/JavaScript">
+        function media(n1,n2,n3){
+            var media=(parseInt(n1)+parseInt(n2)+parseInt(n3))/3;
+            document.getElementById("resposta").value=media;
+        }
+    </script>
+</head>
+<body>
+    <header><h2>Resolução dos exercícios JavaScript Foundation</h1></header>
+    
+    <section>
+        
+        <h3>Primeiro exercício:</h2>
+        <h5>Descrever um algoritmo para resolver o problema da travessia de modo seguro<br>
+        Solução: </h5>
+        <ul>
+            <li>Início do programa</li>
+            <li>Homem leva a cabra para outra margem</li>
+            <li>Homem volta</li>
+            <li>Homem leva a alfafa para outra margem</li>
+            <li>Homem volta com a cabra</li>
+            <li>Homem leva o lobo para outra margem</li>
+            <li>Homem volta</li>
+            <li>Homem leva a cabra para outra margem</li>
+            <li>Fim do programa</li>
+        </ul>
+    </section>
+    <section>
+        <h3>Segundo exercício</h3>
+        <h5>Exibir a média de 3 números com entradas pelo formulário<br>
+            Solução: </h5>
+            <p>Digite três números:</p>
+            <form name="valor">
+                Primeiro valor: <input type="text" name="txtnum1" value="" size="15" maxlength="15">
+                <br>
+                Segundo valor:<input type="text" name="txtnum2" value="" size="15" maxlength="15">
+                <br>
+                Terceiro valor: <input type="text" name="txtnum3" value="" size="15" maxlength="15">
+                <input type="button" value="Calcular média" onclick="media(document.valor.txtnum1.value,document.valor.txtnum2.value,document.valor.txtnum3.value)">
+                Resposta: <input id="resposta" size="15" maxlength="15">
+            </form>
+
+    </section>
+    <footer>
+        <p>Desenvolvido por Beatriz Leite</p>
+    </footer>
+</body>
+</html>
