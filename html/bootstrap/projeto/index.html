@@ -1,0 +1,252 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="./arquibootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+  </head>
+  <body>
+
+<!--Header , título e navegação-->
+    <header>
+      <div class="container"><!--div fora para caso queira adicionar atributos de forma separada ao header-->
+        <div class="row">
+          <div class="col text-light">
+            <h1>New Leaf</h1>
+          </div>
+          <div class="col">
+            <!--single page-->
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link active link-light" href="">Home</a></li>
+                <li class="nav-item"><a class="nav-link link-light" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link link-light" href="#tipos">Flores</a></li>
+                <li class="nav-item"><a class="nav-link link-light" href="#contato">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!--Sobre-->
+    <section id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7 col-sm-12">
+            <h2>Sobre nós</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
+            <p>Cuidar de flores não é uma tarefa díficil.No entanto é importante conhecer a as características e cuidados de cada uma
+              .Segue abaixo as principais dicas. Dê uma conferida!</p>
+          </div>
+          <div class="col-md-5 col-sm-12" id="principal">
+            <img src="./images/principal.jpg" alt="Imagem Exemplo" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--Tipos-->
+    <section id="tipos">
+      <div class="container">
+        <div class="row">
+            <div class="col">
+              <h2>Flores</h2>
+              <!--Girassol-->
+              <div class="card border-info mb-3">
+                <img src="./images/girassol.jpg" alt="Imagem Exemplo" class="card-img-top">
+                <div class="card-body">
+                <h5 class="card-title">Girassol</h5>
+                <p class="card-text">O girassol tem origem na América do Norte e Central e tem dupla finalidade: serve tanto para utilização ornamental
+                  , como para o uso alimentício e produção de óleo. As cores variam entre o amarelo, vermelho, tons alaranjados e marrons.</p>
+                </div>
+                <div class="card-footer">
+                  <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >ver flor</a>
+              </div>
+            </div>
+              <!--Amor-Perfeito-->
+              <div class="card border-info mb-3">
+                <img src="./images/amor-perfeito.jpg" alt="Imagem Exemplo" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Amor perfeito</h5>
+                      <p class="card-text">Amor-perfeito tem origem na Ásia e na Europa e é muito versátil, podendo ser plantada
+                         tanto em vasos como em jardins. Sua cores podem ser amarelo,
+                          azul, roxo, branco, rosa, marrom, até a cor negra.</p></div>
+                      <div class="card-footer">
+                      <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">ver flor</a>
+                    </div>
+                </div>
+
+                <!--Dália-->
+                <div class="card border-info mb-3">
+                    <img src="./images/dalia.jpg" alt="Imagem Exemplo" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Dália</h5>
+                      <p class="card-text">Dália tem origem na América do Norte e possui uma variedade de formas e cores. Suas cores podem ser
+                         amarelo, vermelho, roxo, rosa, entre outros.
+                      </p></div>
+                      <div class="card-footer">
+                      <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-3">ver flor</a>
+                    </div>
+                </div> 
+                </div>   
+        </div>
+      </div>
+    </section>
+    
+<!--Contato e formulário-->
+    <section id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h2>Contato</h2>
+            <p>Ficou interessado? Preencha os campos do formulário para receber novidades</p>
+            </div>
+            <div class="col-md-6 col-sm-12">
+              <form class="form">
+                <div class="input-group">
+                  <input class="form-control" type="text" name="nome" placeholder="digite seu nome">
+                </div>
+                <div class="input-group">
+                  <input class="form-control" type="text" name="email" placeholder="digite seu email">
+                </div>
+                <div class="input-group">
+                  <textarea class="form-control" name="" ows="5"  placeholder="digite algum comentário"  ></textarea>
+                </div>  
+                <button type="submit" class="btn btn-lg btn-success">Submeter formulário</button>.
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+<!--Modals da seção tipos-->
+    <div class="modal fade" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Girassol</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Informações importantes</h6>
+              <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <th>Elementos</th>
+                    <th>Quantidade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Frequência de rega</td>
+                    <td>Uma vez por semana</td>
+                  </tr>
+                  <tr>
+                    <td>Exposição ao sol</td>
+                    <td>No mínimo 4h por dia</td>
+                  </tr>
+                    <tr>
+                      <td>Fertilização</td>
+                      <td>Adubo verde</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+    <div class="modal fade" id="modal-2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Amor-perfeito</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Informações importantes</h6>
+              <table class="table table-hover table-striped">
+                <thead>
+                  <tr>
+                    <th>Elementos</th>
+                    <th>Quantidade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Frequência de rega</td>
+                    <td>Uma vez por semana sempre de manhã</td>
+                  </tr>
+                  <tr>
+                    <td>Exposição ao sol</td>
+                    <td>No mínimo 4h por dia</td>
+                  </tr>
+                    <tr>
+                      <td>Fertilização</td>
+                      <td>Nitratos com baixo nível de nitrogênio</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal-3">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Dália</h5>
+            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Informações importantes</h6>
+            <table class="table table-hover table-striped">
+              <thead>
+                <tr>
+                  <th>Elementos</th>
+                  <th>Quantidade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Frequência de rega</td>
+                  <td>Uma vez por semana</td>
+                </tr>
+                <tr>
+                  <td>Exposição ao sol</td>
+                  <td>No mínimo 6h por dia</td>
+                </tr>
+                  <tr>
+                    <td>Fertilização</td>
+                    <td>Pouco nitrogênio, uma vez por mês</td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+      </div>
+  </div>
+  </div>
+
+
+    <script src="./arquibootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
