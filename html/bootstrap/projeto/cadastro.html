@@ -1,0 +1,195 @@
+<!doctype html> 
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./libs/arquibootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/fontawesomeweb/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./libs/fontawesomeweb/css/brands.min.css">
+    <link rel="stylesheet" href="./libs/fontawesomeweb/css/regular.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style/custom-form.css">
+    
+  </head>
+  <body>
+
+<!--Header , título e navegação-->
+    <header>
+      <div class="container"><!--div fora para caso queira adicionar atributos de forma separada ao header-->
+        <div class="row">
+          
+          <div class="col text-light">
+            <h1><span><i class="fa-solid fa-leaf "></i></span>New Leaf</h1>
+          </div>
+          <div class="col">
+            <!--single page-->
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link active link-light" href="./index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link link-light" href="./index.html#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link link-light" href="./index.html#tipos">Flores</a></li>
+                <li class="nav-item"><a class="nav-link link-light" href="./index.html#contato">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+<!--Contato e formulário-->
+    <section id="cadastro">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <h2><span><i class="fa -solid fa-file-pen" style="color:green"></i></span>Cadastro</h2>
+            <p>Faça seu cadastro para poder realizar compras e receber produtos em sua casa</p>
+            </div>
+          </div>
+          
+              <form class="form">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text">Nome</span>
+                          </div>
+                          <input class="form-control" type="text" name="nome" placeholder="digite seu nome"required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="sa-solid fa-at"></i></span>
+                          </div>
+                        <input class="form-control" type="text" name="email" placeholder="digite seu email"required>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa-solid fa-phone fa-lg fa-shake"></i></span>
+                      </div>
+                    <input class="form-control" type="text" name="tel" placeholder="digite seu telefone" required>
+                    </div>
+                </div>
+              </div>
+
+                <div class="row">
+                  <div class="col"><hr class="solid" style="color:red;" ></div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                        <label for="endereco">Endereço Completo</label>
+                        <!--o atributo for faz um tipo de link entre laber e o input , apontando para o id deste-->
+                        <input type="text" id="endereco" class="form-control" placeholder="Endereço completo"required>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <label for="bairro">Bairro</label>
+                        <input type="text" id="bairro" class="form-control" placeholder="Bairro" >
+                      </div>
+                      <div class="col">
+                        <div class="input-group">
+                          <label for="comp">Complemento</label>
+                          <textarea class="form-control" name="comple" id="comp" rows="2"  placeholder="Complemento do endereço" ></textarea>
+                          </div>  
+                      </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"><label for="cidade">Cidade</label><input type="text" name="cidade" id="cidade" class="form-control"></div>
+                    <div class="col">
+                        <label for="estado">Estado</label>
+                        <select name="estado" id="estado" class="form-control">
+                            <option value="">Selecione o estado</option>
+                            <option value="sp">AC</option>
+                            <option value="sp">AP</option>
+                            <option value="sp">AM</option>
+                            <option value="al">AL</option>
+                            <option value="sp">BA</option>
+                            <option value="sp">CE</option>
+                            <option value="sp">DF</option>
+                            <option value="sp">ES</option>
+                            <option value="mg">MG</option>
+                            <option value="sp">MT</option>
+                            <option value="sp">MS</option>
+                            <option value="sp">SP</option>
+                            <option value="sp">Outro</option>
+                        </select>
+                    </div>
+                    <div class="col"><label for="cep">Cep</label><input type="text" name="cep" id="cep" class="form-control" required></div>
+                </div>
+
+                <div class="row">
+                  <div class="col"><hr class="solid" style="color:red;" ></div>
+                </div>
+
+                
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                        <label for="info" class="col-form-label-sm">Informações</label>
+                        <textarea class="form-control" name="informacoes" id="info" rows="5"  placeholder="digite algum comentário"  ></textarea>
+                        </div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        
+                        <div class="form-check">
+                            
+                            <input type="checkbox" name="promocionais" id="promocionais">
+                            <label for="promocionais" class="form-checl-label">Aceito receber mensagens promocionais</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-lg btn-success">Realizar cadastro</button>.
+              </form>
+              <p> <a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber novidades</p>
+            </div>
+    </section>
+
+
+
+<!--Modals da seção tipos-->
+    <div class="modal fade" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Increver me na lista</h5>
+              <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h6>Preencha os campos para receber novidades promoções</h6>
+              <form class="form-inline">
+                <div class="row">
+                <div class="form-group col-4">
+                    <input type="text" class="form-control mb-2" name="nome" placeholder="nome"required>
+                </div>
+                <div class="form-group col-4">
+                    <input type="text" class="form-control mb-2" name="email" placeholder="email" required>
+                </div>
+                <div class="form-group col-4"> <button type="submit" class="btn btn-sm btn-success">receber novidades</button>
+                </div>
+                </div>
+               
+              </form>  
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary mb-2" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+    <script src="./libs/arquibootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/fontawesomeweb/js/all.min.js"></script>
+   <!--<script src="https://kit.fontawesome.com/678cb59af9.js" crossorigin="anonymous"></script>--> 
+  </body>
+</html>

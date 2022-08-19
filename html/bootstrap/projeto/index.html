@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="./arquibootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/arquibootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./libs/fontawesomeweb/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./libs/fontawesomeweb/css/brands.min.css">
+    <link rel="stylesheet" href="./libs/fontawesomeweb/css/regular.min.css">
     <link rel="stylesheet" href="./style/custom.css">
   </head>
   <body>
@@ -13,14 +16,15 @@
     <header>
       <div class="container"><!--div fora para caso queira adicionar atributos de forma separada ao header-->
         <div class="row">
-          <div class="col text-light">
-            <h1>New Leaf</h1>
+          <div class="col text-light float-left">
+            <h1><span><i class="fa-solid fa-leaf"></i></span>New Leaf</h1>
           </div>
           <div class="col">
             <!--single page-->
             <ul class="nav justify-content-end">
                 <li class="nav-item"><a class="nav-link active link-light" href="">Home</a></li>
                 <li class="nav-item"><a class="nav-link link-light" href="#sobre">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link link-light" href="cadastro.html">Produtos</a> </li>
                 <li class="nav-item"><a class="nav-link link-light" href="#tipos">Flores</a></li>
                 <li class="nav-item"><a class="nav-link link-light" href="#contato">Contato</a></li>
             </ul>
@@ -28,6 +32,60 @@
         </div>
       </div>
     </header>
+
+<!--carousel-->
+<div class="container">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel"> 
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="ratio ratio-21x9">
+        <img class="d-block w-100" src="./images/girassol.jpg" alt="First slide">
+        </div>
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <h3>Arranjos e buquê de flores</h3>
+          <a class="btn btn-primary stretched-link">Dê uma olhada nos nossos produtos</a>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ratio ratio-21x9">
+        <img class="d-block w-100" src="./images/planta.jpg" alt="Second slide">
+        
+      </div>
+        <div class="carousel-caption d-none d-md-block text-dark">
+          <a class="btn btn-primary stretched-link">Aprenda técnicas de plantio</a>
+          </div>
+      </div>
+      <div class="carousel-item">
+        <div class="ratio ratio-21x9">
+        <img class="d-block w-100" src="./images/cute.jpg" alt="Third slide">
+      </div>
+      <div class="carousel-caption d-none d-md-block text-light">
+        <a class="btn btn-primary stretched-link">Explore a nossa galeria</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!--Sobre-->
     <section id="sobre">
@@ -246,7 +304,8 @@
   </div>
   </div>
 
-
-    <script src="./arquibootstrap/js/bootstrap.bundle.min.js"></script>
+ 
+    <script src="./libs/arquibootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./libs/fontawesomeweb/js/all.min.js"></script>
   </body>
 </html>
