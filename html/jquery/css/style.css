@@ -75,7 +75,7 @@ a {
 	z-index: 999;
 	position: absolute;
 	left: 50%;
-	top: 105px;
+	top: 125px;
 	transform: translateX(-50%);
 }
 .navbar-dark .navbar-nav .nav-item {
@@ -160,6 +160,7 @@ a {
 	border: 1px solid #eee;
 	padding: 20px;
 	transition: all 0.5s;
+	display:none;
 }
 .featured-item:hover {
 	opacity: 0.9;
@@ -683,9 +684,9 @@ a {
 		display: none;
 	}
 	#navbarResponsive {
-	    z-index: 99999;
+	    z-index: 9999;
 	    position: absolute;
-	    top: 96px;
+	    top: 128px;
 	    width: 100%;
 	    text-align: center;
 	    background-color: rgba(250,250,250,0.95);
@@ -724,6 +725,14 @@ a {
 		margin-top: 0px;
 	}
 
+}
+
+.invalido{
+	border-color:#F00;
+}
+
+.text-muted{
+	display:none;
 }
 
 @media (max-width: 767px) {
